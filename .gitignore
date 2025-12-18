@@ -1,0 +1,7 @@
+# Executables
+
+# Build artifacts
+*/.build/*
+
+# IDE/Editor
+.vscode/
