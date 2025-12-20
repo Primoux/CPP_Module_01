@@ -6,7 +6,7 @@
 /*   By: enchevri <enchevri@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 11:41:39 by enchevri          #+#    #+#             */
-/*   Updated: 2025/12/20 16:27:23 by enchevri         ###   ########lyon.fr   */
+/*   Updated: 2025/12/20 16:55:57 by enchevri         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,20 @@ Zombie::Zombie(std::string name) : _name(name)
 
 Zombie::~Zombie()
 {
-	std::cout << "Zombie " << this->_name << " died for the science" << std::endl;
+	std::cout << "Zombie #" << this->_id << " " << this->_name << " died for the science" << std::endl;
 }
 
 void Zombie::annonce(void)
 {
-	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << "Zombie #" << this->_id << " " << this->_name << " << : BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 void Zombie::setName(std::string name)
 {
 	this->_name = name;
+}
+
+void Zombie::setId(int id)
+{
+	this->_id = id;
 }
