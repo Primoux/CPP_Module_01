@@ -1,6 +1,6 @@
 .PHONY : all re fclean clean
 
-NAME			= BraiiiiiiinnnzzzZ
+NAME			= HI_THIS_IS_BRAIN
 
 MAKEFLAGS		+= -j $$(nproc)
 
@@ -12,10 +12,7 @@ OBJ_DIR			= .build/
 INCLUDE_DIR		= inc/
 INCLUDES 		= -I $(INCLUDE_DIR)
 
-SRCS			=	src/main.cpp \
-					src/Zombie.cpp \
-					src/newZombie.cpp \
-					src/randomChump.cpp
+SRCS			=	src/main.cpp
 
 OBJS			= $(patsubst %.cpp,$(OBJ_DIR)%.o,$(SRCS))
 DEPENDENCIES	= $(OBJS:.o=.d)

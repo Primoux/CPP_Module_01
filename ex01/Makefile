@@ -1,6 +1,6 @@
 .PHONY : all re fclean clean
 
-NAME			= moarBrainz
+NAME			= Moar_brainz
 
 MAKEFLAGS		+= -j $$(nproc)
 
