@@ -1,6 +1,6 @@
 .PHONY : all re fclean clean
 
-NAME			= braiiiiiiinnnzzzz
+NAME			= moarBrainz
 
 MAKEFLAGS		+= -j $$(nproc)
 
@@ -13,9 +13,8 @@ INCLUDE_DIR		= inc/
 INCLUDES 		= -I $(INCLUDE_DIR)
 
 SRCS			=	src/main.cpp \
-					src/Zombie.cpp \
-					src/newZombie.cpp \
-					src/randomChump.cpp
+					src/zombieHorde.cpp \
+					src/Zombie.cpp
 
 OBJS			= $(patsubst %.cpp,$(OBJ_DIR)%.o,$(SRCS))
 DEPENDENCIES	= $(OBJS:.o=.d)
