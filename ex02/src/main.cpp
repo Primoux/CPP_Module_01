@@ -6,7 +6,7 @@
 /*   By: enchevri <enchevri@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/20 18:18:17 by enchevri          #+#    #+#             */
-/*   Updated: 2025/12/20 18:19:46 by enchevri         ###   ########lyon.fr   */
+/*   Updated: 2025/12/20 21:25:46 by enchevri         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(void)
 	std::cout << "Address of str:\t\t" << &str << std::endl;
 	std::cout << "Address of stringPTR:\t" << stringPTR << std::endl;
 	std::cout << "Address of stringREF:\t" << &stringREF << std::endl;
-	std::cout << "---------------------------------------------" << std::endl;
+	std::cout << "----------------------------------------" << std::endl;
 	std::cout << "Address of str:\t\t" << str << std::endl;
 	std::cout << "Address of stringPTR:\t" << *stringPTR << std::endl;
 	std::cout << "Address of stringREF:\t" << stringREF << std::endl;
