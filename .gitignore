@@ -6,6 +6,8 @@ Unnecessary_violence
 sed
 *.replace
 *.txt
+Harl
+Harl_filter
 # Build artifacts
 */.build/*
 
