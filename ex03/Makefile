@@ -12,9 +12,10 @@ OBJ_DIR			= .build/
 INCLUDE_DIR		= inc/
 INCLUDES 		= -I $(INCLUDE_DIR)
 
-SRCS			=	src/main.cpp \
+SRCS			=	src/main.cpp	\
 					src/Weapon.cpp \
-					src/Human.cpp
+					src/HumanA.cpp \
+					src/HumanB.cpp
 
 OBJS			= $(patsubst %.cpp,$(OBJ_DIR)%.o,$(SRCS))
 DEPENDENCIES	= $(OBJS:.o=.d)
