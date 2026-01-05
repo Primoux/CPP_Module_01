@@ -6,7 +6,7 @@
 /*   By: enchevri <enchevri@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/19 18:00:00 by enzo              #+#    #+#             */
-/*   Updated: 2025/12/20 16:54:39 by enchevri         ###   ########lyon.fr   */
+/*   Updated: 2026/01/05 17:32:54 by enchevri         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int	main(void)
 {
 	std::cout << "---------------------------------------" << std::endl;
-	int size = 5;
+	int size = 50;
 	Zombie *horde = zombieHorde(size, "Enzo");
 	for (int i = 0; i < size;i++)
 	{
