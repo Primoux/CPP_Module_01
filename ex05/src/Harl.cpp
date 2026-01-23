@@ -13,6 +13,9 @@
 #include "Harl.hpp"
 #include <iostream>
 
+using std::endl;
+using std::string;
+
 Harl::Harl()
 {
 }
@@ -23,25 +26,25 @@ Harl::~Harl()
 
 void Harl::debug(void)
 {
-	std::cout << "I love having extra bacon..." << std::endl;
+	std::cout << "I love having extra bacon..." << endl;
 }
 
 void Harl::info(void)
 {
-	std::cout << "I cannot believe adding extra bacon costs more money..." << std::endl;
+	std::cout << "I cannot believe adding extra bacon costs more money..." << endl;
 }
 
 void Harl::warning(void)
 {
-	std::cout << "I think I deserve to have some extra bacon for free..." << std::endl;
+	std::cout << "I think I deserve to have some extra bacon for free..." << endl;
 }
 
 void Harl::error(void)
 {
-	std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
+	std::cout << "This is unacceptable! I want to speak to the manager now." << endl;
 }
 
-void Harl::complain(std::string level)
+void Harl::complain(string level)
 {
 	void (Harl::*funcs[4])(void) = {
 		&Harl::debug,
@@ -50,7 +53,7 @@ void Harl::complain(std::string level)
 		&Harl::error,
 	};
 
-	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 	for (int i = 0; i < 4; ++i)
 	{

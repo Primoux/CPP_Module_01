@@ -13,6 +13,9 @@
 #include "Harl.hpp"
 #include <iostream>
 
+using std::endl;
+using std::string;
+
 Harl::Harl()
 {
 }
@@ -23,27 +26,27 @@ Harl::~Harl()
 
 void Harl::debug(void)
 {
-	std::cout << "[DEBUG]I love having extra bacon..." << std::endl;
+	std::cout << "[DEBUG]\nI love having extra bacon..." << endl;
 }
 
 void Harl::info(void)
 {
-	std::cout << "[INFO]I cannot believe adding extra bacon costs more money..." << std::endl;
+	std::cout << "[INFO]\nI cannot believe adding extra bacon costs more money..." << endl;
 }
 
 void Harl::warning(void)
 {
-	std::cout << "[WARNING]I think I deserve to have some extra bacon for free..." << std::endl;
+	std::cout << "[WARNING]\nI think I deserve to have some extra bacon for free..." << endl;
 }
 
 void Harl::error(void)
 {
-	std::cout << "[ERROR]This is unacceptable! I want to speak to the manager now." << std::endl;
+	std::cout << "[ERROR]\nThis is unacceptable! I want to speak to the manager now." << endl;
 }
 
-void Harl::complain(std::string level)
+void Harl::complain(string level)
 {
-	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	
 	int i;
 	for (i = 0; i < 4; ++i)
@@ -51,7 +54,6 @@ void Harl::complain(std::string level)
 		if (level == levels[i])
 			break ;
 	}
-
 	switch (i)
 	{
 		case 0:
@@ -67,6 +69,6 @@ void Harl::complain(std::string level)
 			error();
 			break;
 		default:
-			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+			std::cout << "[ Probably complaining about insignificant problems ]" << endl;
 	}
 }

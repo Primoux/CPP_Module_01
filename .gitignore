@@ -7,7 +7,7 @@ sed
 *.replace
 *.txt
 Harl
-Harl_filter
+harlFilter
 # Build artifacts
 */.build/*
 

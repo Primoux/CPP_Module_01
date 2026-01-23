@@ -1,6 +1,6 @@
 .PHONY : all re fclean clean
 
-NAME			= Harl_filter
+NAME			= harlFilter
 
 MAKEFLAGS		+= -j $$(nproc)
 
