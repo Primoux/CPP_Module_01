@@ -67,7 +67,7 @@ void Harl::complain(string level)
 			/* FALLTHRU */
 		case 3:
 			error();
-			break;
+		break;
 		default:
 			std::cout << "[ Probably complaining about insignificant problems ]" << endl;
 	}
